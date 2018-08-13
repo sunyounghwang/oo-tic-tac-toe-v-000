@@ -64,7 +64,7 @@ class TicTacToe
     turn_count.even? ? "X" : "O"
   end
 
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.each do |combo|
       if combo.all? {|index| board[index] == "X"}
         return combo
