@@ -87,7 +87,7 @@ class TicTacToe
     won? || draw? || full?
   end
 
-  def winner(board)
+  def winner
     if won?(board)
       winning_index = won?(board)[0]
       return board[winning_index]
