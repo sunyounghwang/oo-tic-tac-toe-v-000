@@ -98,6 +98,8 @@ class TicTacToe
     until won?
       turn
     end
-    
+
+    if won?
+      puts 
   end
 end
