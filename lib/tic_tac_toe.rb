@@ -75,12 +75,12 @@ class TicTacToe
     return false
   end
 
-  def full?(board)
+  def full?
     board.all? {|position| position_taken?(board, board.index(position))}
   end
 
-  def draw?(board)
-    !won?(board) && full?(board)
+  def draw?
+    !won? && full?
   end
 
   def over?(board)
