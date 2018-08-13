@@ -93,4 +93,7 @@ class TicTacToe
       return @board[winning_index]
     end
   end
+
+  def play
+  end
 end
