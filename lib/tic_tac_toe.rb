@@ -76,7 +76,7 @@ class TicTacToe
   end
 
   def full?
-    board.all? {|position| position_taken?(board, board.index(position))}
+    board.all? {|position| position_taken?(@board.index(position))}
   end
 
   def draw?
